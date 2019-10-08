@@ -2,7 +2,7 @@
 name = "git-req"
 version = "2.1.1-rc.2"
 authors = ["Aru Sahni <aru@arusahni.net>"]
-description = "Check out merge requests from your GitLab/GitHub hosted repos with ease!"
+description = "Check out merge requests from your GitLab/GitHub/Bitbucket hosted repos with ease!"
 homepage = "https://arusahni.github.io/git-req/"
 repository = "https://github.com/arusahni/git-req"
 readme = "README.md"

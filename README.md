@@ -10,8 +10,8 @@ git-req
 Why?
 ----
 
-**jrdev**: Hey @aru, can you verify the issue you reported is fixed by mr 17?  
-**aru**: Oh? OK.  
+**jrdev**: Hey @aru, can you verify the issue you reported is fixed by mr 17?
+**aru**: Oh? OK.
 *aru switches to a browser, navigates to his org's GitLab instance, finds the
 project, clicks to the merge requests view, finds the MR, reads the branch name
 (`hotfix/jrdevs_new_branch`), switches back to the terminal, inputs `git

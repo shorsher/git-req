@@ -7,6 +7,7 @@ use std::io::{stdin, stdout, Write};
 
 pub mod github;
 pub mod gitlab;
+pub mod bitbucket;
 
 #[derive(Serialize, Deserialize, Debug)]
 pub struct MergeRequest {
