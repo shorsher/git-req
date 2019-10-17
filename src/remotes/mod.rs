@@ -98,6 +98,17 @@ pub fn get_remote(origin: &str, skip_api_key: bool) -> Result<Box<dyn Remote>, S
                 remote.api_key = apikey;
             }
             Box::new(remote)
+        },
+        "bitbucket.com" => {
+            let mut remote = bitbucket::Bitbucket {
+                id: bitbucket::get_bitbucket_project_name(origin),
+                domain: String::from("bitbucket.com"),
+                name: bitbucket::get_bitbucket_project_name(origin),
+                origin: String::from(origin),
+                api_root: String::from("https://api.bitbucket.org/2.0/repositories/"),
+                api_key: String::from(""),
+            };
+            Box::new(remote)
         }
         // For now, if not GitHub, then GitLab
         gitlab_domain => {
